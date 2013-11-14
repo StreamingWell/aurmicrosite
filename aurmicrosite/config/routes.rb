@@ -1,4 +1,22 @@
 Aurmicrosite::Application.routes.draw do
+
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'registration' => 'registration#new', :as => 'registration', :via => :get
+  match 'registration' => 'registration#create', :as => 'registration', :via => :post
+
+  devise_for :users
+
+  root :to => 'pages#home'
+  
+  # get 'holding' => 'pages#holding'
+  # get 'about' => 'pages#about'
+  # get 'welcome' => 'pages#live'
+  # get 'webcast' => 'pages#webcast'
+
+  get 'live' => 'pages#live'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +66,6 @@ Aurmicrosite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

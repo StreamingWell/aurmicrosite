@@ -58,5 +58,22 @@ module Aurmicrosite
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Required for Devise on Heroku
+    config.assets.initialize_on_precompile = false
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.mandrillapp.com",
+      :port                 => 587,
+      :domain               => "http://realiseasthma.com",
+      :user_name            => "app17465350@heroku.com",
+      :password             => "_P5ab_dBdDDbqojaL5p4qw",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "http://realiseasthma.com"
+    }
   end
 end
