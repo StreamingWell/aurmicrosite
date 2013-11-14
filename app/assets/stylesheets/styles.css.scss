@@ -1,0 +1,161 @@
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: purple;
+
+@import 'bootstrap';
+body{
+    padding-top: 0px;
+}
+
+@import 'bootstrap-responsive';
+
+@font-face {
+	font-family: Arial;	
+}
+
+.navbar .container {
+	width: 1170px;
+}
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+    padding-top: 15px;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: none;
+    color: rgb(255, 110, 0);
+    text-decoration: none;
+}
+
+.brand:hover {
+	background-color: transparent;
+}
+
+.footer {
+
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: $grayLight;
+	text-align: center;
+}
+
+.jumbotron {
+	text-align: center;
+	padding: 10px 10px 20px 10px;
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	max-width: 99%;
+	min-width: 220px;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+	background-image: linear-gradient(to bottom, white, rgb(236, 242, 245));
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.marketing {
+	text-align: center;
+	margin-left: -5px;
+}
+
+.btn {
+	padding-left: 80px;
+	padding-right: 83px;
+}
+
+.btn-primary {
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: rgb(255, 110, 0);
+	background-image: none;
+	background-repeat: none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover {
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: rgb(255, 110, 0);
+	background-image: none;
+	background-repeat: none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+
+ul, ol {
+    padding: 11px;
+    margin: 0px 0px 10px 25px;
+}
+
+a {
+	color: rgb(255, 110, 0);
+	font-weight: 500;
+}
+
+a:hover {
+	background-color: transparent;
+}
+
+#mc_embed_signup .mc-field-group.input-group input {
+    display: inline;
+    width: auto;
+    border: medium none;
+    margin-top: -4px;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+    display: inline;
+    margin-left: 15px;
+}
+
+#mc_embed_signup .button {
+    clear: both;
+    background-color: rgb(255, 110, 0);
+    border: 0px none;
+    border-radius: 4px 4px 4px 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 5px 10px 0px;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+#mc_embed_signup input {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#mc_embed_signup .asterisk {
+    color: rgb(204, 102, 0);
+    font-size: 200%;
+    margin-top: 15px;
+}
+
+#mc_embed_signup {
+    background: none repeat scroll 0% 0%;
+    clear: left;
+    font: 14px Arial,sans-serif;
+}
+
+.table-striped {
+	width: auto;
+	margin-left: 100px;
+	margin-right: 110px;
+}
